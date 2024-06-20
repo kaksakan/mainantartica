@@ -1,0 +1,57 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+
+local Window = Library.CreateLib("Kak.Hub Expedition Antartica Script", "DarkTheme")
+
+local Tab = Window:NewTab("Main")
+local Section = Tab:NewSection("Main")
+
+Section:NewButton("Camp 1", "Click to teleport to the Camp 1", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3717.79224, 238.707718, 270.750397, -0.999137998, 0, 0.0415119417, 0, 1, 0, -0.0415119417, 0, -0.999137998)
+    print("Teleported to the Camp 1")
+end)
+
+Section:NewButton("Camp 2", "Click to teleport to the Camp 2", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1751.80225, 115.290482, -142.314011, -0.218497872, 0, 0.975837409, 0, 1, 0, -0.975837409, 0, -0.218497872)
+    print("Teleported to the Camp 2")
+end)
+
+Section:NewButton("Camp 3 ", "Click to teleport to the Camp 3", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(5852.72168, 330.799744, -35.3741226, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+    print("Teleported to the Camp 3")
+end)
+
+Section:NewButton("Camp 4", "Click to teleport to the Camp 4", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(9018.41016, 606.717773, 65.5087357, 0.515037358, 0, 0.857167721, 0, 1, 0, -0.857167721, 0, 0.515037358)
+    print("Teleported to the Camp 4")
+end)
+
+Section:NewButton("Last Place", "Click to teleport to the Last Place", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(11007.1582, 555.332275, 131.046143, -0.422871113, 0, 0.906189799, 0, 1, 0, -0.906189799, 0, -0.422871113)
+    print("Teleported to the Last Place")
+end)
+
+Section:NewTextBox("WalkSpeed", "Change your WalkSpeed", function(Value)
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+end)
+
+Section:NewTextBox("JumpPower", "Change your JumpPower", function(Value)
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+end)
+
+local Tab = Window:NewTab("Credits and Others")
+local Section = Tab:NewSection("Credits and Others")
+Section:NewLabel("By Kaksakan")
+
+
+Section:NewKeybind("On - Off Uİ", "KeybindInfo", Enum.KeyCode.F, function()
+	Library:ToggleUI()
+end)
+
+
+Section:NewButton("My Discord Server", "Click to copy my Discord Server link", function()
+    setclipboard("https://discord.gg/tNf6Fsvk")
+end)
+
+Section:NewButton("Mobile Keybord", "Use this if u are on MOBİLE", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+end)
