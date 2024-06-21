@@ -1,5 +1,7 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 
+print("Hİ! İm Kak Creator of that Script / Exploit. Ty for using it. This was a message send from owner.Enjoy!")
+
 local Window = Library.CreateLib("Kak.Hub Expedition Antartica Script", "DarkTheme")
 
 local Tab = Window:NewTab("Main")
